@@ -20,10 +20,10 @@ if password_input != st.secrets["APP_PASSWORD"]:
 st.success("ログイン成功！ようこそハレケへ。")
 # --- パスワード機能ここまで ---
 
-# ★APIキー設定（超安定版の gemini-1.5-flash に変更！）
+# ★APIキー設定（現在無料で動く最新版 gemini-2.5-flash に変更！）
 if "GEMINI_API_KEY" in st.secrets:
     genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 else:
     st.error("APIキーが設定されてないぜ！")
     st.stop()
