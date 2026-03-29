@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-# タイトル（「ハレケ」に統一！）
+# タイトル
 st.set_page_config(page_title="投資AI ハレケ", page_icon="📈")
 st.title("📈 投資AI ハレケ")
 
@@ -20,10 +20,10 @@ if password_input != st.secrets["APP_PASSWORD"]:
 st.success("ログイン成功！ようこそハレケへ。")
 # --- パスワード機能ここまで ---
 
-# ★APIキー設定
+# ★APIキー設定（超安定版の gemini-1.5-flash に変更！）
 if "GEMINI_API_KEY" in st.secrets:
     genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 else:
     st.error("APIキーが設定されてないぜ！")
     st.stop()
