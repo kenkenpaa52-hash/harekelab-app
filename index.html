@@ -134,22 +134,22 @@
                 <div class="h-1.5 w-16 bg-blue-600 mx-auto mt-6 rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="p-10 rounded-[3rem] bg-white border-2 border-blue-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
+                <div class="p-10 rounded-[3rem] bg-white border-2 border-blue-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4 text-left">
                     <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all"><i data-lucide="shield-check" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">公共取引・入札</h3>
                     <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors">全省庁統一資格を活かし、国の機関や外郭団体との確実な取引を遂行します。</p>
                 </div>
-                <div class="p-10 rounded-[3rem] bg-white border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
+                <div class="p-10 rounded-[3rem] bg-white border-2 border-slate-100 shadow-xl shadow-slate-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
                     <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all"><i data-lucide="shopping-bag" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">物品販売</h3>
                     <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors">確かな品質の商品を、最適な調達ルートを通じて迅速に提供いたします。</p>
                 </div>
-                <div class="p-10 rounded-[3rem] bg-white border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
+                <div class="p-10 rounded-[3rem] bg-white border-2 border-slate-100 shadow-xl shadow-slate-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
                     <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all"><i data-lucide="handshake" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">役務提供</h3>
                     <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors">専門性の高いサービスを、誠実かつ高品質に提供することをお約束します。</p>
                 </div>
-                <div class="p-10 rounded-[3rem] bg-white border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
+                <div class="p-10 rounded-[3rem] bg-white border-2 border-slate-100 shadow-xl shadow-slate-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
                     <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all"><i data-lucide="headphones" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">法人サポート</h3>
                     <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors">民間企業様の抱える多角的な課題に対し、ラボ視点での解決策を提案します。</p>
@@ -196,7 +196,7 @@
             <div>
                 <span class="text-blue-400 font-black tracking-widest uppercase text-sm mb-6 block font-sans">Representative</span>
                 <h2 class="text-5xl font-[900] mb-12 leading-tight">
-                    <span class="text-2xl font-medium block text-slate-400 mb-2 font-sans">代表</span>
+                    <span class="text-2xl font-medium block text-slate-400 mb-2 font-sans text-left">代表</span>
                     皆川 剣悟
                 </h2>
                 <div class="space-y-8 text-slate-300 leading-relaxed text-xl font-bold">
@@ -205,46 +205,50 @@
                 </div>
             </div>
 
-            <div id="access" class="bg-white/10 backdrop-blur-md rounded-[3.5rem] p-12 border border-white/10 shadow-2xl text-left">
-                <h3 class="text-2xl font-black mb-12 flex items-center gap-4 text-left">
+            <!-- 事業所情報の配置を修正 -->
+            <div id="access" class="bg-white/10 backdrop-blur-md rounded-[3.5rem] p-10 md:p-12 border border-white/10 shadow-2xl">
+                <h3 class="text-2xl font-black mb-10 flex items-center gap-4 text-left">
                     <i data-lucide="map-pin" class="text-blue-400"></i> 事業所情報
                 </h3>
-                <div class="space-y-12 text-left">
-                    <div class="flex gap-8">
-                        <div class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-xl">
-                            <i data-lucide="map-pin" class="text-white w-7 h-7"></i>
+                <div class="space-y-10">
+                    <!-- 所在地 -->
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg">
+                            <i data-lucide="map-pin" class="text-white w-6 h-6"></i>
                         </div>
                         <div>
-                            <p class="text-xs text-slate-400 mb-2 font-bold uppercase tracking-widest leading-none">所在地</p>
-                            <p class="text-xl font-bold text-slate-100 leading-relaxed text-left">〒329-1323 栃木県さくら市卯の里4-56-1<br />アザレヤサンハイムA204</p>
+                            <p class="text-xs text-slate-400 mb-2 font-bold uppercase tracking-widest leading-none text-left">所在地</p>
+                            <p class="text-lg font-bold text-slate-100 leading-relaxed text-left">〒329-1323 栃木県さくら市卯の里4-56-1<br />アザレヤサンハイムA204</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 text-left text-left">
-                        <div class="flex gap-8 text-left">
-                            <div class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-xl">
-                                <i data-lucide="phone" class="text-white w-7 h-7"></i>
+                    <!-- 電話とFAX：折れ曲がらないように調整 -->
+                    <div class="flex flex-col sm:flex-row gap-8 sm:gap-12">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg">
+                                <i data-lucide="phone" class="text-white w-6 h-6"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 mb-2 font-bold uppercase tracking-widest leading-none">電話</p>
-                                <p class="text-2xl font-black text-slate-100 font-sans tracking-wider text-left">070-8455-4142</p>
+                                <p class="text-xs text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left">電話</p>
+                                <p class="text-xl font-black text-slate-100 font-sans tracking-tight whitespace-nowrap">070-8455-4142</p>
                             </div>
                         </div>
-                        <div class="flex gap-8 text-left text-left">
-                            <div class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-xl text-left">
-                                <i data-lucide="printer" class="text-white w-7 h-7"></i>
+                        <div class="flex gap-6 items-center">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg">
+                                <i data-lucide="printer" class="text-white w-6 h-6"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 mb-2 font-bold uppercase tracking-widest leading-none">FAX</p>
-                                <p class="text-2xl font-black text-slate-100 font-sans tracking-wider text-left">028-689-9094</p>
+                                <p class="text-xs text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left">FAX</p>
+                                <p class="text-xl font-black text-slate-100 font-sans tracking-tight whitespace-nowrap">028-689-9094</p>
                             </div>
                         </div>
                     </div>
-                    <div class="pt-12 border-t border-white/10 flex flex-col sm:flex-row gap-6 text-left">
-                        <a href="mailto:harekelab@gmail.com" class="flex-1 bg-white text-slate-900 py-5 rounded-2xl font-black text-xl text-center flex items-center justify-center gap-3 shadow-2xl hover:bg-blue-50 transition-all">
-                            <i data-lucide="mail" class="w-7 h-7"></i> メールを送る
+                    <!-- アクションボタン -->
+                    <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row gap-5">
+                        <a href="mailto:harekelab@gmail.com" class="flex-1 bg-white text-slate-900 py-5 rounded-2xl font-black text-lg text-center flex items-center justify-center gap-3 shadow-2xl hover:bg-blue-50 transition-all">
+                            <i data-lucide="mail" class="w-6 h-6"></i> メールを送る
                         </a>
-                        <a href="https://line.me/R/ti/p/@724iyahi" target="_blank" class="flex-1 bg-[#06C755] text-white py-5 rounded-2xl font-black text-xl text-center flex items-center justify-center gap-3 shadow-2xl hover:opacity-90 transition-all">
-                            <i data-lucide="message-circle" class="w-7 h-7"></i> LINEで相談
+                        <a href="https://line.me/R/ti/p/@724iyahi" target="_blank" class="flex-1 bg-[#06C755] text-white py-5 rounded-2xl font-black text-lg text-center flex items-center justify-center gap-3 shadow-2xl hover:opacity-90 transition-all">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i> LINEで相談
                         </a>
                     </div>
                 </div>
@@ -266,7 +270,7 @@
                 </div>
             </div>
             
-            <div class="text-slate-400 text-sm font-bold tracking-tight text-center text-center">© 2024 HAREKE.Lab. All rights reserved.</div>
+            <div class="text-slate-400 text-sm font-bold tracking-tight text-center">© 2024 HAREKE.Lab. All rights reserved.</div>
             
             <div class="flex gap-8 text-[11px] font-black text-slate-400 uppercase tracking-[0.2em] text-center">
                 <a href="#" class="hover:text-blue-600 transition-colors font-sans text-center text-center">Privacy Policy</a>
