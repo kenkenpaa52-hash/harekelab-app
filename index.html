@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハレケラボ | HAREKE.Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
 
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <!-- ヘッダーロゴ -->
+            <div class="flex items-center gap-3">
+                <div class="relative w-11 h-11 flex items-center justify-center">
+                    <i data-lucide="hexagon" class="absolute inset-0 text-[#3b82f6] w-full h-full" stroke-width="2.5"></i>
+                    <span class="relative text-[10px] font-black text-[#3b82f6] tracking-tight">HKL</span>
+                </div>
+                <div class="flex flex-col text-left">
+                    <span class="text-2xl font-[900] tracking-tighter leading-none text-[#1e293b]">ハレケラボ</span>
+                    <span class="text-[11px] text-[#64748b] font-bold tracking-[0.1em] uppercase mt-1 text-left">HAREKE.LAB</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 items-center font-bold text-sm text-slate-600">
+                <a href="#concept" class="hover:text-blue-600 transition-colors">コンセプト</a>
+                <a href="#services" class="hover:text-blue-600 transition-colors">業務内容</a>
+                <a href="#profile" class="hover:text-blue-600 transition-colors">代表紹介</a>
+                <a href="mailto:harekelab@gmail.com" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-md">お問い合わせ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-48 pb-32 px-4 text-center bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-[900] mb-10 tracking-tighter leading-[1.1] text-slate-900">
+                ハレの日も、ケの日も、<br class="hidden md:block" />ハレケラボ
+            </h1>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
+                確かな品質と迅速な対応で、ビジネスに新たな「ハレ」の瞬間を。<br class="hidden md:block" />
+                物品販売から官公庁取引まで、幅広くサポートします。
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="bg-slate-50 border border-slate-200 px-8 py-4 rounded-3xl shadow-sm flex items-center gap-3 font-bold text-slate-700 transition-transform hover:scale-105">
+                    <i data-lucide="shield-check" class="text-blue-600 w-6 h-6"></i> 官公庁取引対応
+                </div>
+                <div class="bg-slate-50 border border-slate-200 px-8 py-4 rounded-3xl shadow-sm flex items-center gap-3 font-bold text-slate-700 transition-transform hover:scale-105">
+                    <i data-lucide="shopping-bag" class="text-blue-600 w-6 h-6"></i> 物品販売・役務提供
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section id="concept" class="py-24 px-4 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-blue-600 font-black tracking-widest uppercase text-sm mb-4 block">Concept</span>
+            <h2 class="text-3xl font-black mb-10 text-slate-900 tracking-tight text-center">「ハレケ」に込めた想い</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+                <div class="p-8 rounded-3xl bg-blue-50 border border-blue-100">
+                    <h3 class="text-xl font-black text-blue-700 mb-4 flex items-center gap-2">
+                        <i data-lucide="sun" class="w-6 h-6"></i> ハレ（晴れ）
+                    </h3>
+                    <p class="text-slate-600 font-medium leading-relaxed text-left">
+                        儀礼や祭、年中行事などの「非日常」。<br />
+                        ビジネスにおける成功や、新しい挑戦の晴れ舞台を全力でプロデュースします。
+                    </p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200">
+                    <h3 class="text-xl font-black text-slate-700 mb-4 flex items-center gap-2">
+                        <i data-lucide="cloud" class="w-6 h-6"></i> ケ（日常）
+                    </h3>
+                    <p class="text-slate-600 font-medium leading-relaxed text-left">
+                        普段通りの生活、繰り返される「日常」。<br />
+                        日々の地道な業務の土台を支え、当たり前の質を最高のものに高めます。
+                    </p>
+                </div>
+            </div>
+            <p class="mt-12 text-lg font-bold text-slate-700 text-center">
+                ハレの日も、ケの日も、パートナーとして寄り添い続ける。<br />
+                それがハレケラボの使命です。
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 text-left md:text-center">
+                <h2 class="text-3xl font-black mb-4 text-slate-900 tracking-tight text-center">業務内容</h2>
+                <div class="h-1.5 w-12 bg-blue-600 mx-auto md:mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <div class="p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:scale-110 transition-transform text-center"><i data-lucide="shopping-bag"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-left">物品販売</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed text-left">確かな品質の商品を、最適なルートで提供します。</p>
+                </div>
+                <div class="p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:scale-110 transition-transform text-center"><i data-lucide="handshake"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-left">役務提供</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed text-left">専門知識を活かした質の高いサービスを提供します。</p>
+                </div>
+                <div class="p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:scale-110 transition-transform text-center"><i data-lucide="shield-check"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-left text-left">官公庁・公共取引</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed text-left text-left">信頼が求められる公共案件にも柔軟に対応します。</p>
+                </div>
+                <div class="p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:scale-110 transition-transform text-center"><i data-lucide="headphones"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-left text-left">法人向けサポート</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed text-left text-left">企業の課題解決を支える多角的なバックアップ。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Representative Section -->
+    <section id="profile" class="py-32 px-4 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 opacity-10 translate-x-1/4 -translate-y-1/4 text-left">
+            <i data-lucide="hexagon" style="width: 500px; height: 500px;" stroke-width="1"></i>
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center text-left">
+            <div>
+                <span class="text-blue-400 font-bold tracking-widest uppercase text-sm mb-6 block font-sans text-left">Representative</span>
+                <h2 class="text-4xl font-black mb-10 leading-tight text-left">
+                    <span class="text-2xl font-medium block text-slate-400 mb-2 font-sans text-left">代表</span>
+                    皆川 剣悟
+                </h2>
+                <div class="space-y-6 text-slate-300 leading-relaxed text-base font-medium text-left">
+                    <p>ハレケラボは、地域社会への貢献と、パートナー企業様との強固な信頼関係を第一に考えています。</p>
+                    <p>物品販売から官公庁取引まで、一貫して丁寧かつ迅速な対応を心掛け、あらゆるニーズに最適な形でお応えします。</p>
+                </div>
+            </div>
+
+            <div id="access" class="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/10 shadow-2xl text-left">
+                <h3 class="text-xl font-bold mb-10 flex items-center gap-3 text-left">
+                    <i data-lucide="map-pin" class="text-blue-400"></i> 事業所情報
+                </h3>
+                <div class="space-y-8 text-left">
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-600/20 flex items-center justify-center shrink-0">
+                            <i data-lucide="map-pin" class="text-blue-400 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left">所在地</p>
+                            <p class="text-lg font-bold text-slate-100 leading-relaxed text-left">〒329-1323 栃木県さくら市卯の里4-56-1<br />アザレヤサンハイムA204</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
+                        <div class="flex gap-6 text-left">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600/20 flex items-center justify-center shrink-0">
+                                <i data-lucide="phone" class="text-blue-400 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left text-left">電話</p>
+                                <p class="text-lg font-bold text-slate-100 text-left font-sans text-left">070-8455-4142</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 text-left">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600/20 flex items-center justify-center shrink-0">
+                                <i data-lucide="printer" class="text-blue-400 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left text-left">FAX</p>
+                                <p class="text-lg font-bold text-slate-100 text-left font-sans text-left">028-689-9094</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-10 border-t border-white/10 flex flex-col sm:flex-row gap-4 text-left">
+                        <a href="mailto:harekelab@gmail.com" class="flex-1 bg-white text-slate-900 py-4 rounded-2xl font-bold text-center flex items-center justify-center gap-2 shadow-lg hover:bg-slate-50 transition-all font-sans">
+                            <i data-lucide="mail" class="w-5 h-5"></i> メールを送る
+                        </a>
+                        <a href="https://line.me/R/ti/p/@724iyahi" target="_blank" class="flex-1 bg-[#06C755] text-white py-4 rounded-2xl font-bold text-center flex items-center justify-center gap-2 shadow-lg hover:opacity-90 transition-all font-sans">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i> LINEで相談
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-4 bg-white border-t border-slate-100 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center">
+            <div class="flex items-center gap-3">
+                <div class="relative w-11 h-11 flex items-center justify-center">
+                    <i data-lucide="hexagon" class="absolute inset-0 text-[#3b82f6] w-full h-full" stroke-width="2.5"></i>
+                    <span class="relative text-[10px] font-black text-[#3b82f6] tracking-tight">HKL</span>
+                </div>
+                <div class="flex flex-col text-left">
+                    <span class="text-2xl font-[900] tracking-tighter leading-none text-[#1e293b]">ハレケラボ</span>
+                    <span class="text-[11px] text-[#64748b] font-bold tracking-[0.1em] uppercase mt-1 text-left text-left">HAREKE.LAB</span>
+                </div>
+            </div>
+            
+            <div class="text-slate-400 text-sm font-bold tracking-tight text-center">© 2024 HAREKE.Lab. All rights reserved.</div>
+            
+            <div class="flex gap-8 text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] text-center">
+                <a href="#" class="hover:text-blue-600 transition-colors font-sans text-center">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-600 transition-colors font-sans text-center">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
