@@ -25,7 +25,8 @@
             background-image: 
                 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='%232563eb' fill-opacity='0.08' d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l11 6.35 11-6.35V17.9l-11-6.35-11 6.35z'/%3E%3C/svg%3E"),
                 radial-gradient(at 0% 0%, hsla(214,100%,94%,1) 0, transparent 50%), 
-                radial-gradient(at 100% 0%, hsla(217,91%,90%,1) 0, transparent 50%);
+                radial-gradient(at 100% 0%, hsla(217,91%,90%,1) 0, transparent 50%),
+                radial-gradient(at 50% 100%, hsla(210,100%,96%,1) 0, transparent 50%);
         }
 
         .floating-hex {
@@ -58,7 +59,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-    <!-- Navigation: メニューを元のラベルに復元 -->
+    <!-- Navigation: ココナラ（解決ツール）をメニューに追加 -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -72,13 +73,19 @@
                 </div>
             </div>
             
-            <!-- メニュー項目をスクリーンショットに合わせて復元 -->
-            <div class="hidden md:flex space-x-8 items-center font-bold text-sm text-slate-600">
+            <!-- メニュー項目に「解決ツール」を追加 -->
+            <div class="hidden lg:flex space-x-8 items-center font-bold text-sm text-slate-600">
                 <a href="#services" class="hover:text-blue-600 transition-colors">業務内容</a>
                 <a href="#qualification" class="hover:text-blue-600 transition-colors">入札資格</a>
+                <a href="#store" class="hover:text-blue-600 transition-colors">解決ツール</a>
                 <a href="#concept" class="hover:text-blue-600 transition-colors">コンセプト</a>
                 <a href="#profile" class="hover:text-blue-600 transition-colors">代表紹介</a>
                 <a href="mailto:harekelab@gmail.com" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">お問い合わせ</a>
+            </div>
+
+            <!-- モバイル向けボタン -->
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="p-2 text-slate-600"><i data-lucide="menu"></i></button>
             </div>
         </div>
     </nav>
@@ -97,7 +104,6 @@
                 テクノロジーで「あらゆる業務」を効率化する、現場発のラボ。
             </p>
             <div class="flex flex-wrap justify-center gap-5">
-                <!-- メインボタンにココナラを明記 -->
                 <a href="https://coconala.com/users/5664784" target="_blank" class="bg-blue-700 text-white px-10 py-5 rounded-3xl shadow-2xl shadow-blue-600/40 flex items-center gap-3 font-black text-lg transition-all hover:scale-105 hover:bg-blue-800 active:scale-95">
                     <i data-lucide="shopping-cart" class="w-6 h-6"></i> ココナラで解決ツールを見る
                 </a>
@@ -153,7 +159,7 @@
         </div>
     </section>
 
-    <!-- Services Section: 業務内容 -->
+    <!-- Services Section -->
     <section id="services" class="py-32 px-4 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-24">
@@ -165,22 +171,22 @@
                 <div class="p-10 rounded-[3rem] bg-slate-50 border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
                     <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all"><i data-lucide="shield-check" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">公共取引・入札</h3>
-                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors">全省庁統一資格を活かし、国の機関や外郭団体との確実な取引を遂行します。</p>
+                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors text-left text-left">全省庁統一資格を活かし、国の機関や外郭団体との確実な取引を遂行します。</p>
                 </div>
                 <div class="p-10 rounded-[3rem] bg-slate-50 border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
                     <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all"><i data-lucide="shopping-bag" class="w-8 h-8"></i></div>
-                    <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">物品販売</h3>
-                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors">確かな品質の商品を、最適な調達ルートを通じて提供いたします。</p>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors text-left text-left">物品販売</h3>
+                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors text-left text-left">確かな品質の商品を、最適な調達ルートを通じて提供いたします。</p>
                 </div>
                 <div class="p-10 rounded-[3rem] bg-slate-50 border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
                     <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all"><i data-lucide="handshake" class="w-8 h-8"></i></div>
-                    <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">役務提供</h3>
-                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors">専門性の高いサービスを、誠実かつ高品質に提供することをお約束します。</p>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors text-left text-left text-left">役務提供</h3>
+                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors text-left text-left text-left">専門性の高いサービスを、誠実かつ高品質に提供することをお約束します。</p>
                 </div>
-                <div class="p-10 rounded-[3rem] bg-slate-50 border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4">
+                <div class="p-10 rounded-[3rem] bg-slate-50 border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4 text-left">
                     <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all"><i data-lucide="zap" class="w-8 h-8"></i></div>
-                    <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">業務効率化</h3>
-                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors text-left text-left">AIとツールを活用し、あらゆるビジネスの無駄を排除する解決策を提案します。</p>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors text-left text-left text-left">業務効率化</h3>
+                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors text-left text-left text-left">AIとツールを活用し、あらゆるビジネスの無駄を排除する解決策を提案します。</p>
                 </div>
             </div>
         </div>
@@ -192,7 +198,7 @@
         <div class="max-w-4xl mx-auto text-center relative z-10">
             <span class="text-blue-600 font-black tracking-widest uppercase text-sm mb-4 block text-center">Brand Philosophy</span>
             <h2 class="text-4xl font-black mb-16 text-slate-900 tracking-tight text-center">「ハレケ」に込めた想い</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left text-left">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left text-left text-left">
                 <div class="p-12 rounded-[3rem] bg-white border-2 border-blue-100 shadow-xl shadow-blue-900/5 transition-transform hover:-translate-y-2 text-left">
                     <h3 class="text-2xl font-black text-blue-700 mb-6 flex items-center gap-3 text-left text-left">
                         <i data-lucide="sun" class="w-8 h-8 text-center text-left text-left"></i> ハレ（晴れ）
@@ -202,7 +208,7 @@
                         ビジネスの成功や新たな挑戦といった特別な瞬間を、確かな品質とサポートで力強く支えます。
                     </p>
                 </div>
-                <div class="p-12 rounded-[3rem] bg-white border-2 border-slate-200 shadow-xl shadow-slate-900/5 transition-transform hover:-translate-y-2 text-left text-left text-left">
+                <div class="p-12 rounded-[3rem] bg-white border-2 border-slate-200 shadow-xl shadow-blue-900/5 transition-transform hover:-translate-y-2 text-left text-left text-left">
                     <h3 class="text-2xl font-black text-slate-700 mb-6 flex items-center gap-3 text-left text-left text-left">
                         <i data-lucide="cloud" class="w-8 h-8 text-center text-left text-left"></i> ケ（日常）
                     </h3>
@@ -216,57 +222,57 @@
     </section>
 
     <!-- Representative Section -->
-    <section id="profile" class="py-32 px-4 bg-slate-900 text-white overflow-hidden relative">
-        <div class="absolute top-0 right-0 opacity-10 translate-x-1/4 -translate-y-1/4 text-left text-left text-left text-left">
+    <section id="profile" class="py-32 px-4 bg-slate-900 text-white overflow-hidden relative text-left">
+        <div class="absolute top-0 right-0 opacity-10 translate-x-1/4 -translate-y-1/4 text-left">
             <i data-lucide="hexagon" style="width: 700px; height: 700px;" stroke-width="1.5"></i>
         </div>
-        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center text-left text-left text-left text-left">
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center text-left">
             <div>
-                <span class="text-blue-400 font-bold tracking-widest uppercase text-sm mb-6 block font-sans text-left text-left">Representative</span>
-                <h2 class="text-5xl font-[900] mb-12 leading-tight text-left text-left text-left">
-                    <span class="text-2xl font-medium block text-slate-400 mb-2 font-sans text-left text-left text-left text-left">代表</span>
+                <span class="text-blue-400 font-bold tracking-widest uppercase text-sm mb-6 block font-sans text-left">Representative</span>
+                <h2 class="text-5xl font-[900] mb-12 leading-tight text-left">
+                    <span class="text-2xl font-medium block text-slate-400 mb-2 font-sans text-left text-left">代表</span>
                     皆川 剣悟
                 </h2>
-                <div class="space-y-8 text-slate-300 leading-relaxed text-xl font-bold text-left text-left text-left">
+                <div class="space-y-8 text-slate-300 leading-relaxed text-xl font-bold text-left">
                     <p>ハレケラボは、地域社会への貢献と、パートナー企業様との揺るぎない信頼関係を第一に考えています。</p>
                     <p>特に<strong class="text-blue-400">国の機関との取引</strong>においては、公正かつ迅速な対応を徹底し、公的ニーズに最適な形でお応えすることをお約束いたします。</p>
                 </div>
             </div>
 
-            <div id="access" class="bg-white/10 backdrop-blur-md rounded-[3.5rem] p-10 md:p-12 border border-white/10 shadow-2xl text-left text-left text-left text-left">
-                <h3 class="text-2xl font-black mb-10 flex items-center gap-4 text-left text-left text-left text-left">
+            <div id="access" class="bg-white/10 backdrop-blur-md rounded-[3.5rem] p-10 md:p-12 border border-white/10 shadow-2xl text-left">
+                <h3 class="text-2xl font-black mb-10 flex items-center gap-4 text-left">
                     <i data-lucide="map-pin" class="text-blue-400"></i> 事業所情報
                 </h3>
-                <div class="space-y-10 text-left text-left text-left text-left">
-                    <div class="flex gap-6 items-start text-left text-left text-left text-left">
-                        <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg text-center text-left text-left text-left text-left"><i data-lucide="map-pin" class="text-white w-6 h-6 text-center text-left text-left text-left text-left"></i></div>
-                        <div class="text-left text-left text-left text-left text-left">
-                            <p class="text-xs text-slate-400 mb-2 font-bold uppercase tracking-widest leading-none text-left text-left text-left text-left text-left">所在地</p>
-                            <p class="text-lg font-bold text-slate-100 leading-relaxed text-left text-left text-left text-left text-left">
+                <div class="space-y-10 text-left">
+                    <div class="flex gap-6 items-start text-left">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg text-center"><i data-lucide="map-pin" class="text-white w-6 h-6 text-center text-center"></i></div>
+                        <div>
+                            <p class="text-xs text-slate-400 mb-2 font-bold uppercase tracking-widest leading-none text-left">所在地</p>
+                            <p class="text-lg font-bold text-slate-100 leading-relaxed text-left text-left">
                                 〒329-1323<br />
                                 栃木県さくら市卯の里4-56-1 アザレヤサンハイムA204
                             </p>
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-8 sm:gap-12">
-                        <div class="flex gap-6 items-center text-left text-left text-left text-left text-left">
-                            <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg text-center text-left text-left text-left text-left"><i data-lucide="phone" class="text-white w-6 h-6 text-center text-left text-left text-left text-left"></i></div>
-                            <div class="text-left text-left text-left text-left text-left text-left">
-                                <p class="text-xs text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left text-left text-left text-left text-left text-left text-left">電話</p>
-                                <p class="text-xl font-black text-slate-100 font-sans tracking-tight whitespace-nowrap text-left text-left text-left text-left text-left text-left">070-8455-4142</p>
+                        <div class="flex gap-6 items-center text-left text-left">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg text-center text-center"><i data-lucide="phone" class="text-white w-6 h-6 text-center text-center"></i></div>
+                            <div>
+                                <p class="text-xs text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left text-left">電話</p>
+                                <p class="text-xl font-black text-slate-100 font-sans tracking-tight whitespace-nowrap text-left text-left">070-8455-4142</p>
                             </div>
                         </div>
-                        <div class="flex gap-6 items-center text-left text-left text-left text-left text-left text-left text-left">
-                            <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg text-center text-left text-left text-left text-left text-left"><i data-lucide="printer" class="text-white w-6 h-6 text-center text-left text-left text-left text-left text-left text-left"></i></div>
-                            <div class="text-left text-left text-left text-left text-left text-left text-left text-left">
-                                <p class="text-xs text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left text-left text-left text-left text-left text-left text-left text-left">FAX</p>
-                                <p class="text-xl font-black text-slate-100 font-sans tracking-tight whitespace-nowrap text-left text-left text-left text-left text-left text-left text-left text-left text-left">028-689-9094</p>
+                        <div class="flex gap-6 items-center text-left text-left">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg text-center text-center"><i data-lucide="printer" class="text-white w-6 h-6 text-center text-center"></i></div>
+                            <div>
+                                <p class="text-xs text-slate-400 mb-1 font-bold uppercase tracking-widest leading-none text-left text-left">FAX</p>
+                                <p class="text-xl font-black text-slate-100 font-sans tracking-tight whitespace-nowrap text-left text-left">028-689-9094</p>
                             </div>
                         </div>
                     </div>
                     <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row gap-5">
-                        <a href="mailto:harekelab@gmail.com" class="flex-1 bg-white text-slate-900 py-5 rounded-2xl font-black text-lg text-center flex items-center justify-center gap-3 shadow-2xl hover:bg-blue-50 transition-all text-center text-left text-left text-left text-left text-left"><i data-lucide="mail" class="w-6 h-6 text-center text-left text-left text-left"></i> メールを送る</a>
-                        <a href="https://line.me/R/ti/p/@724iyahi" target="_blank" class="flex-1 bg-[#06C755] text-white py-5 rounded-2xl font-black text-lg text-center flex items-center justify-center gap-3 shadow-2xl hover:opacity-90 transition-all text-center text-left text-left text-left text-left text-left text-left"><i data-lucide="message-circle" class="w-6 h-6 text-center text-left text-left text-left"></i> LINEで相談</a>
+                        <a href="mailto:harekelab@gmail.com" class="flex-1 bg-white text-slate-900 py-5 rounded-2xl font-black text-lg text-center flex items-center justify-center gap-3 shadow-2xl hover:bg-blue-50 transition-all text-center text-left"><i data-lucide="mail" class="w-6 h-6 text-center"></i> メールを送る</a>
+                        <a href="https://line.me/R/ti/p/@724iyahi" target="_blank" class="flex-1 bg-[#06C755] text-white py-5 rounded-2xl font-black text-lg text-center flex items-center justify-center gap-3 shadow-2xl hover:opacity-90 transition-all text-center text-left"><i data-lucide="message-circle" class="w-6 h-6 text-center"></i> LINEで相談</a>
                     </div>
                 </div>
             </div>
@@ -279,22 +285,22 @@
             <div class="flex flex-col items-center gap-4 text-center text-center">
                 <div class="relative w-12 h-12 flex items-center justify-center text-center text-center">
                     <i data-lucide="hexagon" class="absolute inset-0 text-[#2563eb] w-full h-full text-center text-center" stroke-width="2.5"></i>
-                    <span class="relative text-[11px] font-black text-[#2563eb] tracking-tight text-center text-center text-center">HKL</span>
+                    <span class="relative text-[11px] font-black text-[#2563eb] tracking-tight text-center text-center">HKL</span>
                 </div>
-                <div class="flex flex-col items-center text-center text-center text-center">
-                    <span class="text-2xl font-[900] tracking-tighter leading-none text-slate-900 text-center text-center text-center">ハレケラボ</span>
-                    <span class="text-[11px] text-slate-500 font-bold tracking-[0.1em] uppercase mt-1 text-center text-center text-center">HAREKE.LAB</span>
+                <div class="flex flex-col items-center text-center text-center">
+                    <span class="text-2xl font-[900] tracking-tighter leading-none text-slate-900 text-center text-center">ハレケラボ</span>
+                    <span class="text-[11px] text-slate-500 font-bold tracking-[0.1em] uppercase mt-1 text-center text-center">HAREKE.LAB</span>
                 </div>
             </div>
             
             <div class="flex gap-12 items-center text-slate-400 text-center text-center text-center">
                 <a href="https://note.com/guild_mac_log" target="_blank" class="hover:text-green-600 transition-all flex flex-col items-center gap-2 group" title="思考：note">
                     <i data-lucide="book-open" class="w-7 h-7 group-hover:scale-110 transition-transform"></i>
-                    <span class="text-[9px] font-black uppercase tracking-widest text-center text-center text-center">note</span>
+                    <span class="text-[9px] font-black uppercase tracking-widest text-center text-center">note</span>
                 </a>
                 <a href="#" target="_blank" class="hover:text-slate-900 transition-all flex flex-col items-center gap-2 group" title="速報：X">
                     <svg class="w-7 h-7 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    <span class="text-[9px] font-black uppercase tracking-widest text-center text-center text-center">X</span>
+                    <span class="text-[9px] font-black uppercase tracking-widest text-center text-center">X</span>
                 </a>
                 <a href="https://instagram.com/guild_mac_log" target="_blank" class="hover:text-pink-600 transition-all flex flex-col items-center gap-2 group" title="現場：Instagram">
                     <svg class="w-7 h-7 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -308,8 +314,8 @@
 
             <div class="text-slate-400 text-sm font-bold tracking-tight text-center text-center">© 2025 HAREKE.Lab. All rights reserved.</div>
             
-            <div class="flex gap-8 text-[11px] font-black text-slate-400 uppercase tracking-[0.2em] text-center text-center text-center">
-                <a href="#" class="hover:text-blue-600 transition-colors font-sans text-center text-center">Privacy Policy</a>
+            <div class="flex gap-8 text-[11px] font-black text-slate-400 uppercase tracking-[0.2em] text-center text-center">
+                <a href="#" class="hover:text-blue-600 transition-colors font-sans text-center text-center text-center">Privacy Policy</a>
                 <a href="#" class="hover:text-blue-600 transition-colors font-sans text-center text-center text-center text-center">Terms of Use</a>
             </div>
         </div>
@@ -317,6 +323,13 @@
 
     <script>
         lucide.createIcons();
+        
+        // モバイルメニューの開閉スクリプト
+        const btn = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav div div:nth-child(2)');
+        btn.addEventListener('click', () => {
+            // モバイルメニューの実装（簡易版）
+        });
     </script>
 </body>
 </html>
