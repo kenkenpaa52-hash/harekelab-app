@@ -67,17 +67,14 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-            <!-- ロゴ：左揃え最適化 -->
-            <div class="flex items-center gap-3.5 text-left">
+            <!-- ロゴ：アイコン＋ハレケラボのみで美しく中央揃え -->
+            <a href="#" class="flex items-center gap-3 group">
                 <div class="relative w-10 h-10 flex items-center justify-center shrink-0">
-                    <i data-lucide="hexagon" class="absolute inset-0 text-[#2563eb] w-full h-full" stroke-width="2.5"></i>
-                    <span class="relative text-[10px] font-black text-[#2563eb] tracking-tight">HKL</span>
+                    <i data-lucide="hexagon" class="absolute inset-0 text-[#2563eb] w-full h-full group-hover:scale-105 transition-transform" stroke-width="2.5"></i>
+                    <span class="relative text-[11px] font-black text-[#2563eb] tracking-tight">HKL</span>
                 </div>
-                <div class="flex flex-col items-start justify-center">
-                    <span class="text-[23px] font-[900] tracking-tight leading-none text-slate-900 block">ハレケラボ</span>
-                    <span class="text-[11px] font-bold text-slate-500 tracking-normal leading-none mt-1 font-sans block" style="margin-left: -1px;">HAREKE.Lab</span>
-                </div>
-            </div>
+                <span class="text-2xl font-[900] tracking-tight leading-none text-slate-900">ハレケラボ</span>
+            </a>
             
             <div class="hidden lg:flex space-x-7 items-center font-bold text-sm text-slate-600">
                 <a href="#services" class="hover:text-blue-600 transition-colors">業務内容</a>
@@ -392,16 +389,13 @@
     <!-- Footer -->
     <footer class="py-20 px-4 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto flex flex-col items-center gap-12">
-            <!-- フッターロゴ -->
-            <div class="flex flex-col items-center gap-3 text-center">
-                <div class="relative w-11 h-11 flex items-center justify-center">
+            <!-- フッターロゴ：アイコン＋ハレケラボ -->
+            <div class="flex items-center gap-3">
+                <div class="relative w-10 h-10 flex items-center justify-center shrink-0">
                     <i data-lucide="hexagon" class="absolute inset-0 text-[#2563eb] w-full h-full" stroke-width="2.5"></i>
                     <span class="relative text-[11px] font-black text-[#2563eb] tracking-tight leading-none">HKL</span>
                 </div>
-                <div class="flex flex-col items-center">
-                    <span class="text-2xl font-[900] tracking-tight leading-none text-slate-900">ハレケラボ</span>
-                    <span class="text-[11px] font-bold text-slate-500 tracking-normal leading-none mt-1 font-sans">HAREKE.Lab</span>
-                </div>
+                <span class="text-2xl font-[900] tracking-tight leading-none text-slate-900">ハレケラボ</span>
             </div>
             
             <div class="flex gap-12 items-center text-slate-400">
