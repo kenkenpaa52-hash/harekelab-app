@@ -67,7 +67,7 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-            <!-- ロゴ：アイコン＋ハレケラボのみで美しく中央揃え -->
+            <!-- ロゴ -->
             <a href="#" class="flex items-center gap-3 group">
                 <div class="relative w-10 h-10 flex items-center justify-center shrink-0">
                     <i data-lucide="hexagon" class="absolute inset-0 text-[#2563eb] w-full h-full group-hover:scale-105 transition-transform" stroke-width="2.5"></i>
@@ -79,8 +79,8 @@
             <div class="hidden lg:flex space-x-7 items-center font-bold text-sm text-slate-600">
                 <a href="#services" class="hover:text-blue-600 transition-colors">業務内容</a>
                 <a href="#qualification" class="hover:text-blue-600 transition-colors">入札資格</a>
-                <a href="#achievements" class="hover:text-blue-600 transition-colors">実績・出版</a>
                 <a href="#store" class="hover:text-blue-600 transition-colors">解決ツール</a>
+                <a href="#achievements" class="hover:text-blue-600 transition-colors">実績・出版</a>
                 <a href="#concept" class="hover:text-blue-600 transition-colors">コンセプト</a>
                 <a href="#profile" class="hover:text-blue-600 transition-colors">代表紹介</a>
                 <a href="mailto:harekelab@gmail.com" class="bg-blue-600 text-white px-5 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 text-center">お問い合わせ</a>
@@ -102,17 +102,17 @@
                 テクノロジーで「あらゆる業務」を効率化する、現場発のラボ。
             </p>
             <div class="flex flex-wrap justify-center gap-5">
-                <a href="https://coconala.com/users/5664784" target="_blank" class="bg-blue-700 text-white px-10 py-5 rounded-3xl shadow-2xl shadow-blue-600/40 flex items-center gap-3 font-black text-lg transition-all hover:scale-105 hover:bg-blue-800 active:scale-95">
-                    <i data-lucide="shopping-cart" class="w-6 h-6"></i> ココナラで解決ツールを見る
+                <a href="#achievements" class="bg-blue-700 text-white px-10 py-5 rounded-3xl shadow-2xl shadow-blue-600/40 flex items-center gap-3 font-black text-lg transition-all hover:scale-105 hover:bg-blue-800 active:scale-95">
+                    <i data-lucide="award" class="w-6 h-6"></i> 調達実績・出版情報を見る
                 </a>
-                <a href="#achievements" class="bg-white/90 backdrop-blur-sm border-2 border-blue-200 px-8 py-5 rounded-3xl shadow-sm flex items-center gap-3 font-bold text-blue-800 hover:border-blue-500 transition-all">
-                    <i data-lucide="award" class="w-6 h-6 text-blue-600"></i> 調達実績・出版情報を見る
+                <a href="https://coconala.com/users/5664784" target="_blank" class="bg-white/90 backdrop-blur-sm border-2 border-slate-200 px-8 py-5 rounded-3xl shadow-sm flex items-center gap-3 font-bold text-slate-800 hover:border-orange-500 hover:text-orange-600 transition-all">
+                    <i data-lucide="shopping-cart" class="w-6 h-6 text-orange-500"></i> ココナラで解決ツールを見る
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Pillar 1: 入札資格 -->
+    <!-- 1. 入札資格 -->
     <section id="qualification" class="py-24 bg-white relative">
         <div class="max-w-5xl mx-auto px-4">
             <div class="qualification-card border-2 border-slate-100 rounded-[3rem] p-10 md:p-16 flex flex-col md:flex-row items-center gap-12 shadow-2xl shadow-blue-900/5 transition-all hover:border-blue-400 text-left">
@@ -136,8 +136,29 @@
         </div>
     </section>
 
-    <!-- 実績 & 出版 -->
-    <section id="achievements" class="py-24 bg-slate-100/70 border-t border-slate-200">
+    <!-- 2. 解決ツール（ココナラ） -->
+    <section id="store" class="py-24 bg-slate-50 relative border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="store-card border-2 border-slate-100 rounded-[3rem] p-10 md:p-16 flex flex-col md:flex-row-reverse items-center gap-12 shadow-2xl shadow-blue-900/5 transition-all hover:border-orange-300 text-left">
+                <div class="w-28 h-28 bg-orange-500 rounded-full flex items-center justify-center text-white shrink-0 shadow-2xl shadow-orange-300">
+                    <i data-lucide="zap" class="w-14 h-14"></i>
+                </div>
+                <div class="text-center md:text-left flex-1 text-left">
+                    <span class="text-orange-600 font-black tracking-widest uppercase text-sm mb-3 block text-left">Tools / Store</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-6 tracking-tight text-left">「解決」を1秒で。ココナラ展開中</h2>
+                    <p class="text-slate-600 font-bold mb-10 text-lg leading-relaxed text-left">
+                        現場での「不便」を解消するために開発された、業務効率化AIアプリや独自ツールを<strong class="text-orange-600">ココナラ</strong>にて提供しています。悩みを1秒で消す、実戦的なソリューションをお届けします。
+                    </p>
+                    <a href="https://coconala.com/users/5664784" target="_blank" class="inline-flex bg-white border-2 border-orange-500 text-orange-600 px-8 py-4 rounded-2xl font-black text-lg transition-all hover:bg-orange-500 hover:text-white shadow-md group text-center">
+                        ココナラのストアページへ <i data-lucide="external-link" class="ml-2 w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 実績 & 出版 -->
+    <section id="achievements" class="py-24 bg-white border-t border-slate-200">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
                 <span class="text-blue-600 font-black tracking-widest uppercase text-sm mb-3 block">Track Record & Books</span>
@@ -147,10 +168,10 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left">
                 <!-- 官公庁・自衛隊 調達実績カード -->
-                <div class="bg-white border-2 border-slate-200 rounded-[3rem] p-10 shadow-xl shadow-slate-900/5 hover:border-blue-500 transition-all flex flex-col justify-between">
+                <div class="bg-slate-50 border-2 border-slate-200 rounded-[3rem] p-10 shadow-xl shadow-slate-900/5 hover:border-blue-500 transition-all flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-4 mb-6">
-                            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600">
+                            <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600">
                                 <i data-lucide="building-2" class="w-8 h-8"></i>
                             </div>
                             <div>
@@ -162,7 +183,7 @@
                             全省庁統一資格に基づき、官公庁および防衛省機関のオープンカウンター調達・競争入札に参画。厳格な公的仕様に合致した確実な調達と、期日厳守のデリバリーを遂行しています。
                         </p>
                         
-                        <div class="space-y-3 bg-slate-50 p-5 rounded-2xl border border-slate-200/80 mb-6">
+                        <div class="space-y-3 bg-white p-5 rounded-2xl border border-slate-200/80 mb-6">
                             <div class="flex items-start gap-3">
                                 <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 shrink-0 mt-0.5"></i>
                                 <div class="text-sm font-bold text-slate-700">
@@ -193,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-black text-slate-400 uppercase tracking-wider">
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-black text-slate-400 uppercase tracking-wider">
                         <span>Status: Active Contractor</span>
                         <span class="text-blue-600 font-bold">全省庁統一資格 登録事業者</span>
                     </div>
@@ -232,28 +253,7 @@
         </div>
     </section>
 
-    <!-- Pillar 2: ココナラ -->
-    <section id="store" class="py-24 bg-white relative border-t border-slate-200">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="store-card border-2 border-slate-100 rounded-[3rem] p-10 md:p-16 flex flex-col md:flex-row-reverse items-center gap-12 shadow-2xl shadow-blue-900/5 transition-all hover:border-orange-300 text-left">
-                <div class="w-28 h-28 bg-orange-500 rounded-full flex items-center justify-center text-white shrink-0 shadow-2xl shadow-orange-300">
-                    <i data-lucide="zap" class="w-14 h-14"></i>
-                </div>
-                <div class="text-center md:text-left flex-1 text-left">
-                    <span class="text-orange-600 font-black tracking-widest uppercase text-sm mb-3 block text-left">Tools / Store</span>
-                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-6 tracking-tight text-left">「解決」を1秒で。ココナラ展開中</h2>
-                    <p class="text-slate-600 font-bold mb-10 text-lg leading-relaxed text-left">
-                        現場での「不便」を解消するために開発された、業務効率化AIアプリや独自ツールを<strong class="text-orange-600">ココナラ</strong>にて提供しています。悩みを1秒で消す、実戦的なソリューションをお届けします。
-                    </p>
-                    <a href="https://coconala.com/users/5664784" target="_blank" class="inline-flex bg-white border-2 border-orange-500 text-orange-600 px-8 py-4 rounded-2xl font-black text-lg transition-all hover:bg-orange-500 hover:text-white shadow-md group text-center">
-                        ココナラのストアページへ <i data-lucide="external-link" class="ml-2 w-5 h-5 group-hover:scale-110 transition-transform"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
+    <!-- 4. 業務内容 -->
     <section id="services" class="py-32 px-4 bg-slate-50 border-t border-slate-200 text-left">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-24 text-center">
@@ -277,16 +277,16 @@
                     <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors text-left text-left text-left">役務・制作提供</h3>
                     <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors text-left text-left text-left">名刺・印刷物制作をはじめ、現場ニーズに合わせた各種役務を高品質に提供します。</p>
                 </div>
-                <div class="p-10 rounded-[3rem] bg-white border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4 text-left text-left">
+                <div class="p-10 rounded-[3rem] bg-white border-2 border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500 group hover:bg-blue-600 hover:-translate-y-4 text-left">
                     <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm group-hover:bg-white transition-all text-center text-left"><i data-lucide="zap" class="w-8 h-8 text-left text-left"></i></div>
-                    <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors text-left text-left text-left text-left">業務効率化</h3>
-                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors text-left text-left text-left text-left">AIとツールを活用し、あらゆるビジネスの無駄を排除する解決策を提案します。</p>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-white transition-colors text-left text-left text-left">業務効率化</h3>
+                    <p class="text-slate-500 text-base leading-relaxed group-hover:text-blue-50 transition-colors text-left text-left text-left">AIとツールを活用し、あらゆるビジネスの無駄を排除する解決策を提案します。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Concept Section -->
+    <!-- 5. コンセプト -->
     <section id="concept" class="py-32 px-4 bg-slate-100 border-y border-slate-200 overflow-hidden relative text-left">
         <i data-lucide="hexagon" class="floating-hex animate-float" style="width: 300px; height: 300px; top: 10%; right: -100px; opacity: 0.1;"></i>
         <div class="max-w-6xl mx-auto relative z-10">
@@ -328,7 +328,7 @@
         </div>
     </section>
 
-    <!-- Representative Section -->
+    <!-- 6. 代表紹介 -->
     <section id="profile" class="py-32 px-4 bg-slate-900 text-white overflow-hidden relative text-left">
         <div class="absolute top-0 right-0 opacity-10 translate-x-1/4 -translate-y-1/4 text-left">
             <i data-lucide="hexagon" style="width: 700px; height: 700px;" stroke-width="1.5"></i>
@@ -386,10 +386,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- 7. フッター -->
     <footer class="py-20 px-4 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto flex flex-col items-center gap-12">
-            <!-- フッターロゴ：アイコン＋ハレケラボ -->
+            <!-- フッターロゴ -->
             <div class="flex items-center gap-3">
                 <div class="relative w-10 h-10 flex items-center justify-center shrink-0">
                     <i data-lucide="hexagon" class="absolute inset-0 text-[#2563eb] w-full h-full" stroke-width="2.5"></i>
